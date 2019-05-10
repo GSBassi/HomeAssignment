@@ -1,4 +1,5 @@
 ﻿using Abp.Application.Services;
+using Abp.Authorization;
 using AutoMapper;
 using HomeAssignment.CMServices.DTO;
 using HomeAssignment.Models;
@@ -10,6 +11,8 @@ using System.Threading.Tasks;
 
 namespace HomeAssignment.CMServices
 {
+    [AbpAuthorize]
+
     public class CMSContenService : ApplicationService, ICMSContentAppService
     {
         private readonly ICMSContent _cmsManager;
