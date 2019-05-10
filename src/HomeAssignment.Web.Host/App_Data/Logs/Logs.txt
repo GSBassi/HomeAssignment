@@ -2431,3 +2431,694 @@ WARN  2019-05-09 23:40:27,096 [11   ] Mvc.ExceptionHandling.AbpExceptionFilter -
 INFO  2019-05-09 23:40:27,550 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
 INFO  2019-05-09 23:40:27,629 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) in 2360.7947ms
 INFO  2019-05-09 23:40:27,640 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3952.535ms 400 application/json; charset=utf-8
+INFO  2019-05-09 23:45:25,688 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/CMSContenService/InsertOrUpdate application/json-patch+json 41
+INFO  2019-05-09 23:45:25,688 [9    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-09 23:45:25,688 [9    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-05-09 23:45:25,689 [9    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:45:25,689 [9    ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:45:25,689 [9    ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:45:25,689 [9    ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:45:25,689 [9    ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:45:25,702 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "InsertOrUpdate", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application)
+INFO  2019-05-09 23:45:25,702 [9    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-09 23:45:25,702 [9    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+WARN  2019-05-09 23:45:25,834 [9    ] Mvc.ExceptionHandling.AbpExceptionFilter - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.ThrowValidationError() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 118
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 89
+   at Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Validation\AbpValidationActionFilter.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+WARN  2019-05-09 23:45:25,835 [9    ] Mvc.ExceptionHandling.AbpExceptionFilter - There are 2 validation errors:
+WARN  2019-05-09 23:45:25,835 [9    ] Mvc.ExceptionHandling.AbpExceptionFilter - The pageName field is required. (pageName)
+WARN  2019-05-09 23:45:25,835 [9    ] Mvc.ExceptionHandling.AbpExceptionFilter - The pageContent field is required. (pageContent)
+INFO  2019-05-09 23:45:25,836 [9    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-09 23:45:25,836 [9    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) in 134.2646ms
+INFO  2019-05-09 23:45:25,836 [9    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 148.7229ms 400 application/json; charset=utf-8
+INFO  2019-05-09 23:45:36,698 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2019-05-09 23:45:36,757 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.7064ms 200 text/html
+INFO  2019-05-09 23:45:37,411 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2019-05-09 23:45:37,418 [18   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:45:37,418 [18   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:45:37,419 [18   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:45:37,419 [18   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:45:37,419 [18   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:45:37,437 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 26.8171ms 200 application/json;charset=utf-8
+INFO  2019-05-09 23:45:37,443 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2019-05-09 23:45:37,451 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2019-05-09 23:45:37,451 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.0999ms 200 image/png
+INFO  2019-05-09 23:48:45,097 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2019-05-09 23:48:45,098 [17   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:48:45,115 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.7821ms 204 
+INFO  2019-05-09 23:48:45,168 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2019-05-09 23:48:45,169 [26   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:48:45,170 [26   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:48:45,170 [26   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:48:45,170 [26   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:48:45,173 [26   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:48:45,173 [26   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:48:45,174 [26   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:48:45,174 [26   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:48:45,599 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-05-09 23:48:45,599 [26   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:48:45,629 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-05-09 23:48:48,890 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 3257.204ms.
+INFO  2019-05-09 23:48:49,101 [26   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-09 23:48:49,267 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 3667.1194ms
+INFO  2019-05-09 23:48:49,267 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4098.6983ms 200 application/json; charset=utf-8
+INFO  2019-05-09 23:48:49,328 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-05-09 23:48:49,329 [26   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:48:49,329 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.245ms 204 
+INFO  2019-05-09 23:48:49,372 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-05-09 23:48:49,372 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:48:49,373 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:48:49,373 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:48:49,373 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:48:49,373 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:48:49,373 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:48:49,385 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application)
+INFO  2019-05-09 23:48:49,385 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:48:49,596 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application) - Validation state: Valid
+INFO  2019-05-09 23:48:49,711 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 114.5463ms.
+INFO  2019-05-09 23:48:49,714 [26   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-09 23:48:49,775 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application) in 390.3092ms
+INFO  2019-05-09 23:48:49,775 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 403.8828ms 200 application/json; charset=utf-8
+INFO  2019-05-09 23:48:56,571 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/signalr/negotiate?enc_auth_token=null  
+INFO  2019-05-09 23:48:56,572 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:48:56,572 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.457ms 204 
+INFO  2019-05-09 23:48:57,753 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=null text/plain;charset=UTF-8 0
+INFO  2019-05-09 23:48:57,753 [26   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+ERROR 2019-05-09 23:48:58,046 [26   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-05-09 23:48:58,291 [26   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLMKV4O60OML", Request id "0HLMKV4O60OML:00000006": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-05-09 23:48:58,294 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 541.3499ms 500 
+INFO  2019-05-09 23:48:58,360 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=null text/plain;charset=UTF-8 0
+INFO  2019-05-09 23:48:58,360 [26   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+ERROR 2019-05-09 23:48:58,380 [26   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-05-09 23:48:58,384 [26   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLMKV4O60OML", Request id "0HLMKV4O60OML:00000007": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-05-09 23:48:58,386 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.7496ms 500 
+INFO  2019-05-09 23:48:58,424 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=null text/plain;charset=UTF-8 0
+INFO  2019-05-09 23:48:58,424 [26   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+ERROR 2019-05-09 23:48:58,429 [26   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-05-09 23:48:58,432 [26   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLMKV4O60OML", Request id "0HLMKV4O60OML:00000008": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-05-09 23:48:58,434 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.8303ms 500 
+INFO  2019-05-09 23:48:58,471 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=null text/plain;charset=UTF-8 0
+INFO  2019-05-09 23:48:58,472 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+ERROR 2019-05-09 23:48:58,475 [28   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-05-09 23:48:58,477 [28   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLMKV4O60OML", Request id "0HLMKV4O60OML:00000009": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-05-09 23:48:58,480 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.9044ms 500 
+INFO  2019-05-09 23:49:44,277 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2019-05-09 23:49:44,277 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:44,277 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3225ms 204 
+INFO  2019-05-09 23:49:44,339 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2019-05-09 23:49:44,339 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:44,340 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:49:44,340 [22   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:44,340 [22   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:49:44,340 [22   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:44,340 [22   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:49:44,340 [22   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:44,340 [22   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:49:44,346 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-05-09 23:49:44,346 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:44,348 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-05-09 23:49:44,361 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 12.8349ms.
+INFO  2019-05-09 23:49:44,373 [22   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-09 23:49:44,373 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 27.6678ms
+INFO  2019-05-09 23:49:44,374 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.1358ms 200 application/json; charset=utf-8
+INFO  2019-05-09 23:49:44,416 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-05-09 23:49:44,416 [29   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:44,416 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.4361ms 204 
+INFO  2019-05-09 23:49:44,430 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-05-09 23:49:44,431 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:44,431 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:49:44,431 [22   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:44,431 [22   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:49:44,431 [22   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:44,431 [22   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:49:44,438 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application)
+INFO  2019-05-09 23:49:44,438 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:44,442 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application) - Validation state: Valid
+INFO  2019-05-09 23:49:44,459 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15.4964ms.
+INFO  2019-05-09 23:49:44,460 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-09 23:49:44,460 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application) in 21.8625ms
+INFO  2019-05-09 23:49:44,460 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.9727ms 200 application/json; charset=utf-8
+INFO  2019-05-09 23:49:53,956 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2019-05-09 23:49:53,957 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:53,957 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.7594ms 204 
+INFO  2019-05-09 23:49:54,004 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2019-05-09 23:49:54,004 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:54,005 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:49:54,005 [22   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:54,005 [22   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:49:54,005 [22   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:54,005 [22   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:49:54,005 [22   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:54,005 [22   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:49:54,014 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-05-09 23:49:54,014 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:54,016 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-05-09 23:49:54,034 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 17.3976ms.
+INFO  2019-05-09 23:49:54,064 [22   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-09 23:49:54,065 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 50.733ms
+INFO  2019-05-09 23:49:54,065 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 61.527ms 200 application/json; charset=utf-8
+INFO  2019-05-09 23:49:54,182 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-05-09 23:49:54,183 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:54,183 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.4204ms 204 
+INFO  2019-05-09 23:49:54,238 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-05-09 23:49:54,238 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:54,238 [22   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:49:54,239 [22   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:54,239 [22   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:49:54,239 [22   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:49:54,239 [22   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:49:54,248 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application)
+INFO  2019-05-09 23:49:54,248 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:54,251 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application) - Validation state: Valid
+INFO  2019-05-09 23:49:54,378 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 127.7708ms.
+INFO  2019-05-09 23:49:54,384 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-09 23:49:54,384 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.Sessions.SessionAppService.GetCurrentLoginInformations (HomeAssignment.Application) in 135.9059ms
+INFO  2019-05-09 23:49:54,384 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 146.1036ms 200 application/json; charset=utf-8
+INFO  2019-05-09 23:49:57,530 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/signalr/negotiate?enc_auth_token=null  
+INFO  2019-05-09 23:49:57,531 [29   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2019-05-09 23:49:57,531 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.523ms 204 
+INFO  2019-05-09 23:49:57,667 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=null text/plain;charset=UTF-8 0
+INFO  2019-05-09 23:49:57,667 [29   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+ERROR 2019-05-09 23:49:57,670 [29   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-05-09 23:49:57,672 [29   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLMKV4O60OML", Request id "0HLMKV4O60OML:00000013": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-05-09 23:49:57,673 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.7502ms 500 
+INFO  2019-05-09 23:49:57,889 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=null text/plain;charset=UTF-8 0
+INFO  2019-05-09 23:49:57,889 [29   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+ERROR 2019-05-09 23:49:57,892 [29   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-05-09 23:49:57,894 [29   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLMKV4O60OML", Request id "0HLMKV4O60OML:00000014": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-05-09 23:49:57,895 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.5083ms 500 
+INFO  2019-05-09 23:49:57,945 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=null text/plain;charset=UTF-8 0
+INFO  2019-05-09 23:49:57,945 [29   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+ERROR 2019-05-09 23:49:57,947 [29   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-05-09 23:49:57,951 [29   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLMKV4O60OML", Request id "0HLMKV4O60OML:00000015": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-05-09 23:49:57,952 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.4606ms 500 
+INFO  2019-05-09 23:49:57,966 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=null text/plain;charset=UTF-8 0
+INFO  2019-05-09 23:49:57,966 [29   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+ERROR 2019-05-09 23:49:57,969 [29   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-05-09 23:49:57,971 [29   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLMKV4O60OML", Request id "0HLMKV4O60OML:00000016": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt) in D:\Github\aspnetboilerplate\src\Abp\Runtime\Security\SimpleStringCipher_NetStandard.cs:line 132
+   at HomeAssignment.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Web.Host\Startup\AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Security\AbpSecurityHeadersMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+INFO  2019-05-09 23:49:57,972 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.0743ms 500 
+INFO  2019-05-09 23:59:03,907 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CMSContenService/GetAll  
+INFO  2019-05-09 23:59:03,912 [37   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:59:03,912 [37   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:59:03,913 [37   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:59:03,913 [37   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:59:03,913 [37   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:59:03,974 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.GetAll (HomeAssignment.Application)
+INFO  2019-05-09 23:59:03,976 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.CMServices.CMSContenService.GetAll (HomeAssignment.Application) - Validation state: Valid
+INFO  2019-05-09 23:59:04,430 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.CMServices.CMSContenService.GetAll (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 454.1104ms.
+INFO  2019-05-09 23:59:04,536 [37   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-09 23:59:04,540 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.GetAll (HomeAssignment.Application) in 566.0652ms
+INFO  2019-05-09 23:59:04,541 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 633.339ms 200 application/json; charset=utf-8
+INFO  2019-05-09 23:59:33,621 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/CMSContenService/InsertOrUpdate application/json-patch+json 2
+INFO  2019-05-09 23:59:33,621 [36   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-09 23:59:33,621 [36   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-05-09 23:59:33,621 [36   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-09 23:59:33,622 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:59:33,622 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-09 23:59:33,622 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-09 23:59:33,622 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-09 23:59:33,671 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "InsertOrUpdate", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application)
+INFO  2019-05-09 23:59:33,672 [36   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-09 23:59:33,672 [36   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+WARN  2019-05-09 23:59:33,701 [39   ] Mvc.ExceptionHandling.AbpExceptionFilter - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.ThrowValidationError() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 118
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 89
+   at Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Validation\AbpValidationActionFilter.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+WARN  2019-05-09 23:59:33,701 [39   ] Mvc.ExceptionHandling.AbpExceptionFilter - There are 2 validation errors:
+WARN  2019-05-09 23:59:33,701 [39   ] Mvc.ExceptionHandling.AbpExceptionFilter - The pageName field is required. (pageName)
+WARN  2019-05-09 23:59:33,701 [39   ] Mvc.ExceptionHandling.AbpExceptionFilter - The pageContent field is required. (pageContent)
+INFO  2019-05-09 23:59:33,702 [39   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-09 23:59:33,702 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) in 30.6962ms
+INFO  2019-05-09 23:59:33,702 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.8439ms 400 application/json; charset=utf-8
+INFO  2019-05-10 00:09:30,709 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CMSContenService/GetAll  
+INFO  2019-05-10 00:09:30,711 [41   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-10 00:09:30,934 [41   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:09:30,934 [41   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-10 00:09:30,934 [41   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:09:30,934 [41   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-10 00:09:30,940 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.GetAll (HomeAssignment.Application)
+INFO  2019-05-10 00:09:30,941 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.CMServices.CMSContenService.GetAll (HomeAssignment.Application) - Validation state: Valid
+INFO  2019-05-10 00:09:30,952 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.CMServices.CMSContenService.GetAll (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 10.3189ms.
+INFO  2019-05-10 00:09:30,966 [41   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-10 00:09:30,966 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.GetAll (HomeAssignment.Application) in 26.283ms
+INFO  2019-05-10 00:09:30,966 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 257.6061ms 200 application/json; charset=utf-8
+INFO  2019-05-10 00:10:13,230 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CMSContenService/GetCMSContent?Id=1  
+INFO  2019-05-10 00:10:13,230 [38   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-10 00:10:13,231 [38   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:10:13,231 [38   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-10 00:10:13,231 [38   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:10:13,231 [38   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-10 00:10:13,345 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCMSContent", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application)
+INFO  2019-05-10 00:10:13,480 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application) with arguments (HomeAssignment.CMServices.DTO.GetAuthorInput) - Validation state: Valid
+ERROR 2019-05-10 00:10:13,744 [38   ] Mvc.ExceptionHandling.AbpExceptionFilter - There is no such an entity. Entity type: HomeAssignment.Models.CMSContent, id: 1
+Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. Entity type: HomeAssignment.Models.CMSContent, id: 1
+   at Abp.Domain.Repositories.AbpRepositoryBase`2.Get(TPrimaryKey id) in D:\Github\aspnetboilerplate\src\Abp\Domain\Repositories\AbpRepositoryBase.cs:line 78
+   at Castle.Proxies.Invocations.IRepository`2_Get_18.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`1Proxy_3.Get(Int32 id)
+   at HomeAssignment.Models.CMSContentManager.GetCMSContentByID(Int32 id) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Core\Models\CMSContentManager.cs:line 27
+   at HomeAssignment.CMServices.CMSContenService.GetCMSContent(GetAuthorInput input) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Application\CMServices\CMSContenService.cs:line 33
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-05-10 00:10:13,746 [38   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-10 00:10:13,746 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application) in 400.9115ms
+INFO  2019-05-10 00:10:13,746 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 518.3631ms 404 application/json; charset=utf-8
+INFO  2019-05-10 00:10:47,740 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CMSContenService/GetCMSContent?Id=9  
+INFO  2019-05-10 00:10:47,740 [36   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-10 00:10:47,740 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:10:47,740 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-10 00:10:47,740 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:10:47,741 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-10 00:10:47,745 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCMSContent", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application)
+INFO  2019-05-10 00:10:47,747 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application) with arguments (HomeAssignment.CMServices.DTO.GetAuthorInput) - Validation state: Valid
+ERROR 2019-05-10 00:10:47,828 [38   ] Mvc.ExceptionHandling.AbpExceptionFilter - There is no such an entity. Entity type: HomeAssignment.Models.CMSContent, id: 9
+Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. Entity type: HomeAssignment.Models.CMSContent, id: 9
+   at Abp.Domain.Repositories.AbpRepositoryBase`2.Get(TPrimaryKey id) in D:\Github\aspnetboilerplate\src\Abp\Domain\Repositories\AbpRepositoryBase.cs:line 78
+   at Castle.Proxies.Invocations.IRepository`2_Get_18.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`1Proxy_3.Get(Int32 id)
+   at HomeAssignment.Models.CMSContentManager.GetCMSContentByID(Int32 id) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Core\Models\CMSContentManager.cs:line 27
+   at HomeAssignment.CMServices.CMSContenService.GetCMSContent(GetAuthorInput input) in C:\Users\owner\Documents\4.6.0\aspnet-core\src\HomeAssignment.Application\CMServices\CMSContenService.cs:line 33
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-05-10 00:10:47,829 [38   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-10 00:10:47,829 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application) in 84.3126ms
+INFO  2019-05-10 00:10:47,829 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.9815ms 404 application/json; charset=utf-8
+INFO  2019-05-10 00:10:56,661 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CMSContenService/GetCMSContent?Id=2  
+INFO  2019-05-10 00:10:56,662 [38   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-10 00:10:56,663 [38   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:10:56,663 [38   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-10 00:10:56,663 [38   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:10:56,663 [38   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-10 00:10:56,669 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCMSContent", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application)
+INFO  2019-05-10 00:10:56,671 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application) with arguments (HomeAssignment.CMServices.DTO.GetAuthorInput) - Validation state: Valid
+INFO  2019-05-10 00:10:56,705 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 33.3398ms.
+INFO  2019-05-10 00:10:56,717 [36   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-10 00:10:56,717 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application) in 48.0532ms
+INFO  2019-05-10 00:10:56,717 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 55.9662ms 200 application/json; charset=utf-8
+INFO  2019-05-10 00:11:48,422 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/CMSContenService/InsertOrUpdate application/json-patch+json 2
+INFO  2019-05-10 00:11:48,423 [36   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-10 00:11:48,423 [36   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-05-10 00:11:48,423 [36   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-10 00:11:48,423 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:11:48,423 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-10 00:11:48,424 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:11:48,424 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-10 00:11:48,430 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "InsertOrUpdate", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application)
+INFO  2019-05-10 00:11:48,430 [36   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-10 00:11:48,430 [36   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+WARN  2019-05-10 00:11:48,457 [36   ] Mvc.ExceptionHandling.AbpExceptionFilter - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.ThrowValidationError() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 118
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 89
+   at Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Validation\AbpValidationActionFilter.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+WARN  2019-05-10 00:11:48,458 [36   ] Mvc.ExceptionHandling.AbpExceptionFilter - There are 2 validation errors:
+WARN  2019-05-10 00:11:48,458 [36   ] Mvc.ExceptionHandling.AbpExceptionFilter - The pageName field is required. (pageName)
+WARN  2019-05-10 00:11:48,458 [36   ] Mvc.ExceptionHandling.AbpExceptionFilter - The pageContent field is required. (pageContent)
+INFO  2019-05-10 00:11:48,459 [36   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-10 00:11:48,459 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) in 28.7605ms
+INFO  2019-05-10 00:11:48,459 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.8377ms 400 application/json; charset=utf-8
+INFO  2019-05-10 00:12:09,995 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/CMSContenService/GetCMSContent?Id=2  
+INFO  2019-05-10 00:12:09,995 [44   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-10 00:12:09,996 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:12:09,996 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-10 00:12:09,996 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:12:09,996 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-10 00:12:10,000 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCMSContent", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application)
+INFO  2019-05-10 00:12:10,002 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application) with arguments (HomeAssignment.CMServices.DTO.GetAuthorInput) - Validation state: Valid
+INFO  2019-05-10 00:12:10,036 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 34.2202ms.
+INFO  2019-05-10 00:12:10,089 [44   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-10 00:12:10,090 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.GetCMSContent (HomeAssignment.Application) in 88.9508ms
+INFO  2019-05-10 00:12:10,090 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 94.8812ms 200 application/json; charset=utf-8
+INFO  2019-05-10 00:13:11,195 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/CMSContenService/InsertOrUpdate application/json-patch+json 267
+INFO  2019-05-10 00:13:11,210 [44   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-10 00:13:11,210 [44   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-05-10 00:13:11,211 [44   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-10 00:13:11,211 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:13:11,211 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-10 00:13:11,211 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:13:11,211 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-10 00:13:11,216 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "InsertOrUpdate", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application)
+INFO  2019-05-10 00:13:11,216 [44   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-10 00:13:11,216 [44   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-05-10 00:13:11,218 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) with arguments (HomeAssignment.CMServices.DTO.CreateContentInput) - Validation state: Valid
+INFO  2019-05-10 00:13:11,333 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 115.4209ms.
+ERROR 2019-05-10 00:13:12,469 [44   ] Mvc.ExceptionHandling.AbpExceptionFilter - An error occurred while updating the entries. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\AbpDbContext.cs:line 224
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChangesAsync(CancellationToken cancellationToken) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore.EntityFrameworkCore\Zero\EntityFrameworkCore\AbpZeroCommonDbContext.cs:line 170
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContextAsync(DbContext dbContext) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 167
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesAsync() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 68
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUowAsync() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 83
+   at Abp.Domain.Uow.UnitOfWorkBase.CompleteAsync() in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkBase.cs:line 273
+   at Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Uow\AbpUowActionFilter.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-05-10 00:13:12,472 [44   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-10 00:13:12,472 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) in 1256.0106ms
+INFO  2019-05-10 00:13:12,472 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1277.0803ms 500 application/json; charset=utf-8
+INFO  2019-05-10 00:13:36,509 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/CMSContenService/InsertOrUpdate application/json-patch+json 267
+INFO  2019-05-10 00:13:36,509 [44   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-10 00:13:36,509 [44   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-05-10 00:13:36,510 [44   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-10 00:13:36,510 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:13:36,510 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-10 00:13:36,510 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:13:36,510 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-10 00:13:36,520 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "InsertOrUpdate", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application)
+INFO  2019-05-10 00:13:36,520 [44   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-10 00:13:36,520 [44   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-05-10 00:13:36,525 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) with arguments (HomeAssignment.CMServices.DTO.CreateContentInput) - Validation state: Valid
+INFO  2019-05-10 00:13:36,550 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 24.4855ms.
+ERROR 2019-05-10 00:13:36,582 [6    ] Mvc.ExceptionHandling.AbpExceptionFilter - An error occurred while updating the entries. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\AbpDbContext.cs:line 224
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChangesAsync(CancellationToken cancellationToken) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore.EntityFrameworkCore\Zero\EntityFrameworkCore\AbpZeroCommonDbContext.cs:line 170
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContextAsync(DbContext dbContext) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 167
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesAsync() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 68
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUowAsync() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 83
+   at Abp.Domain.Uow.UnitOfWorkBase.CompleteAsync() in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkBase.cs:line 273
+   at Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Uow\AbpUowActionFilter.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-05-10 00:13:36,585 [6    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-10 00:13:36,585 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) in 65.6298ms
+INFO  2019-05-10 00:13:36,586 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 77.0088ms 500 application/json; charset=utf-8
+INFO  2019-05-10 00:13:58,057 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/CMSContenService/InsertOrUpdate application/json-patch+json 187
+INFO  2019-05-10 00:13:58,058 [6    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-10 00:13:58,058 [6    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-05-10 00:13:58,058 [6    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-05-10 00:13:58,058 [6    ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:13:58,058 [6    ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-05-10 00:13:58,058 [6    ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-05-10 00:13:58,058 [6    ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-05-10 00:13:58,064 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "InsertOrUpdate", controller = "CMSContenService"}. Executing action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application)
+INFO  2019-05-10 00:13:58,064 [6    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2019-05-10 00:13:58,064 [6    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2019-05-10 00:13:58,066 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) with arguments (HomeAssignment.CMServices.DTO.CreateContentInput) - Validation state: Valid
+INFO  2019-05-10 00:13:58,161 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 95.398ms.
+ERROR 2019-05-10 00:13:58,266 [6    ] Mvc.ExceptionHandling.AbpExceptionFilter - An error occurred while updating the entries. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\AbpDbContext.cs:line 224
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChangesAsync(CancellationToken cancellationToken) in D:\Github\aspnetboilerplate\src\Abp.ZeroCore.EntityFrameworkCore\Zero\EntityFrameworkCore\AbpZeroCommonDbContext.cs:line 170
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContextAsync(DbContext dbContext) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 167
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesAsync() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 68
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUowAsync() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 83
+   at Abp.Domain.Uow.UnitOfWorkBase.CompleteAsync() in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkBase.cs:line 273
+   at Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Uow\AbpUowActionFilter.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-05-10 00:13:58,269 [6    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-05-10 00:13:58,269 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action HomeAssignment.CMServices.CMSContenService.InsertOrUpdate (HomeAssignment.Application) in 204.6991ms
+INFO  2019-05-10 00:13:58,269 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 211.4823ms 500 application/json; charset=utf-8
